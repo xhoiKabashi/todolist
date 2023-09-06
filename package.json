@@ -1,12 +1,14 @@
 {
+  "home": "https://xhoikabashi.github.io/todolist/",
   "name": "todo",
   "version": "1.0.0",
   "description": "",
   "private": true,
   "scripts": {
+    "predeploy":"npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
