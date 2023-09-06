@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="mainContainer">
+      <div class="secondContainer">
+        <div class="leftContainer">
+          <div class="left1">
+            <input
+              type="text"
+              placeholder="Your new Folder"
+              id="textInputFolder"
+            />
+            <button id="btnFolder">Create New</button>
+          </div>
+          <div class="left2">
+            <ul id="listFolder">
+              <li>Your Folders</li>
+            </ul>
+          </div>
+        </div>
+        <div class="rightContainer">
+          <div>
+            <input type="text" placeholder="Your tasks here" id="taskInput" />
+          </div>
+          <div><input type="date" id="dateInput" /></div>
+          <div>
+            <select name="" id="priority">
+              <option value="Normal">Normal</option>
+              <option value="Urgent">Urgent</option>
+            </select>
+          </div>
+          <div><button id="btnTask">+</button></div>
+          <div id="mainRight">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="main.js"></script>
+  </body>
+</html>
