@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --bgColor: #38bdf8;
+  --secongBgColor: #f0f9ff;
+  --mainFontColor: #082f49;
+  --secondFontColor: #f0f9ff;
+  background-color: var(--secongBgColor);
+}
+
+.mainContainer {
+  background-color: var(--bgColor);
+  height: 100vh;
+  padding-top: 80px;
+}
+.secondContainer {
+  background-color: var(--secongBgColor);
+  height: 100%;
+  border-top-left-radius: 40px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 40px;
+  gap: 40px;
+}
+
+.leftContainer {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  padding: 20px 15px 20px 20px;
+}
+
+.rightContainer {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  grid-template-rows: 50px;
+  grid-template-areas:
+    "nput date option priority"
+    "main main main main";
+  padding: 20px;
+  justify-items: center;
+  gap: 20px;
+}
+
+.left1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.left1 * {
+  height: 40px;
+  padding: 0px 15px 0 15px;
+}
+.left1 > button,
+.rightContainer button {
+  background-color: var(--bgColor);
+  color: var(--secondFontColor);
+  border-radius: 10px;
+  border: none;
+}
+
+.left1 > input {
+  border: none;
+  border-bottom: 2px solid var(--bgColor);
+  width: 300px;
+  background-color: var(--secongBgColor);
+}
+
+.left2 {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: fit-content;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.left2 > ul {
+  padding: 20px;
+  list-style: none;
+  font-size: large;
+  font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.left2  li {
+  display: flex;
+ gap: 20px;
+ padding: 10px;
+ justify-items: center;
+}
+
+.showTasks {
+
+  align-self: center;
+  color: var(--mainFontColor);
+}
+.left2 button {
+background-color: var(--mainFontColor);
+color: var(--secondFontColor);
+padding: 5px 15px 5px 15px;
+border-radius: 10px;
+border: none;
+}
+
+#openBtn {
+  background-color: var(--bgColor);
+}
+
+.rightContainer > div > * {
+  padding: 5px;
+  width: 100%;
+  padding: 5px 30px 5px 30px;
+}
+.rightContainer input,
+.rightContainer select {
+  border: none;
+  border-bottom: 2px solid var(--bgColor);
+  background-color: var(--secongBgColor);
+}
+
+#mainRight {
+  grid-area: main;
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+}
+#mainRight > ul {
+  list-style: none;
+}
+.tasks {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.taskRight {
+  display: flex;
+  justify-content: start;
+}
+
+.taskLeft {
+  display: flex;
+  justify-content: end;
+} 
+
+.taskLeft,
+.taskRight {
+  padding: 10px;
+  gap: 40px;
+  align-items: center;
+  font-size: 20px;
+}
+
+#checkbox:checked + div {
+  text-decoration: line-through;
+}
+.taskRight > button {
+  padding: 10px;
+  background-color: var(--mainFontColor);
+}
+
+.taskRight > #taskPrior {
+
+  background-color: var(--bgColor);
+  color: var(--secongBgColor);
+  padding: 5px;
+  border-radius: 10px;
+}
